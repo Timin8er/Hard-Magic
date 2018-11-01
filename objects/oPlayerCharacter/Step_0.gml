@@ -9,13 +9,13 @@ hsp = move * walksp;
 vsp += grv;
 
 
-if (place_meeting(x,y+1,oWall) && key_jump){
+if (place_meeting(x, y+1, oWall) && key_jump){
 	vsp = -7;
 }
 
 // horisontal collition
-if (place_meeting(x+hsp,y,oWall)){
-	while(!place_meeting(x+sign(hsp),y,oWall)){
+if (place_meeting(x+hsp, y, oWall)){
+	while(!place_meeting(x + sign(hsp), y, oWall)){
 		x += sign(hsp);
 	}
 	hsp = 0;
@@ -23,11 +23,18 @@ if (place_meeting(x+hsp,y,oWall)){
 x += hsp;
 
 // vertical collition
-if (place_meeting(x,y+vsp,oWall)){
-	while(!place_meeting(x,y+sign(vsp),oWall)){
+if (place_meeting(x, y + vsp, oWall)){
+	while(!place_meeting(x, y + sign(vsp), oWall)){
 		y += sign(vsp);
 	}
 	vsp = 0;
 }
 y += vsp;
+
+
+// mp regen
+mp += mpRegenRate * (delta_time / 1000000);
+if (mp > mpMax) {
+	mp = mpMax;
+}
 
