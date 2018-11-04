@@ -43,7 +43,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "manaContainerVolumeMin",
+            "varName": "mana_container_volume_min",
             "varType": 0
         },
         {
@@ -57,7 +57,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "12",
-            "varName": "manaContainerVolumeMax",
+            "varName": "mana_container_volume_max",
             "varType": 0
         },
         {
@@ -71,7 +71,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "12",
-            "varName": "manaContainerVolume",
+            "varName": "mana_container_volume",
             "varType": 0
         },
         {
@@ -85,7 +85,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "12",
-            "varName": "manaEvaporationRate",
+            "varName": "mana_evaporation_rate",
             "varType": 0
         }
     ],
