@@ -27,10 +27,3 @@ ds_map_add_list(spell, "pieces", pieces);
 spells = ds_list_create();
 ds_list_add(spells, spell);
 ds_list_add(spells, "item");
-
-
-var str;
-ini_open("Spells.ini");
-str = ds_list_write(spells);
-ini_write_string("Lists", "0", str);
-ini_close();

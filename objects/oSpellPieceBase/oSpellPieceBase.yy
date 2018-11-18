@@ -87,6 +87,20 @@
             "value": "12",
             "varName": "mana_evaporation_rate",
             "varType": 0
+        },
+        {
+            "id": "28d00d7a-fc43-4cd7-bfde-96f59e39e7c2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "flag_construction",
+            "varType": 3
         }
     ],
     "solid": false,
