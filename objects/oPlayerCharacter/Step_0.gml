@@ -1,5 +1,3 @@
-event_inherited();
-
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check(vk_space);
@@ -7,21 +5,36 @@ key_jump = keyboard_check(vk_space);
 // calculate movement
 var move = key_right - key_left;
 
-speed_hor = move * walk_speed;
+hsp = move * walksp;
+vsp += grv;
 
-if (place_meeting(x, y + 1, oTerrain) && key_jump) {
-	speed_ver = -7;
+
+if (place_meeting(x, y+1, oWall) && key_jump){
+	vsp = -7;
 }
 
-process_movement();
-
-
-if (mouse_check_button_pressed(mb_left)) {
-	var this_spell = ds_list_find_value(spells, 0);
-	var cost = ds_map_find_value(this_spell, "net_mp");
-	
-	if (mp >= cost) {
-		summon_spell(this_spell, mouse_x, mouse_y);
-		mp -= cost;
+// horisontal collition
+if (place_meeting(x+hsp, y, oWall)){
+	while(!place_meeting(x + sign(hsp), y, oWall)){
+		x += sign(hsp);
 	}
+	hsp = 0;
 }
+x += hsp;
+
+// vertical collition
+if (place_meeting(x, y + vsp, oWall)){
+	while(!place_meeting(x, y + sign(vsp), oWall)){
+		y += sign(vsp);
+	}
+	vsp = 0;
+}
+y += vsp;
+
+
+// mp regen
+mp += mpRegenRate * (delta_time / 1000000);
+if (mp > mpMax) {
+	mp = mpMax;
+}
+
