@@ -25,7 +25,10 @@
             "m_owner": "a001b256-3464-4e87-85f6-8027849a0c5e"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 65d8bca... thing
 =======
 >>>>>>> parent of 65d8bca... thing
         },
@@ -39,6 +42,9 @@
             "eventtype": 8,
             "m_owner": "a001b256-3464-4e87-85f6-8027849a0c5e"
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 65d8bca... thing
+=======
 >>>>>>> parent of 65d8bca... thing
 =======
 >>>>>>> parent of 65d8bca... thing
@@ -74,7 +80,11 @@
             "value": "oPlayerCharacter",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "varName": "playerObject",
+=======
+            "varName": "obj_player",
+>>>>>>> parent of 65d8bca... thing
 =======
             "varName": "obj_player",
 >>>>>>> parent of 65d8bca... thing
