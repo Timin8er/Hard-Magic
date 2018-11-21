@@ -16,8 +16,7 @@
                 "Key": "ed6a955d-5826-4f98-a450-10b414266c27",
                 "Value": {
                     "configDeltas": [
-                        "inherited",
-                        "inherited_23ff5c14-5261-4c16-a59c-a62d8cf7df97"
+                        "inherited"
                     ],
                     "id": "4f8db1b2-fc3b-4f67-a484-9e8a4dc91110",
                     "resourcePath": "options\\main\\options_main.yy",
@@ -165,14 +164,6 @@
                 "id": "bbd89daf-48f6-4451-9b31-88a9a435f219",
                 "resourcePath": "views\\89a14ca7-0631-42ef-8e5f-edc940e627b7.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "89f6b370-4456-4714-92f3-2d06f51bc8e4",
-            "Value": {
-                "id": "2cf205c1-f503-468c-a7b3-f5b67a9de384",
-                "resourcePath": "rooms\\Scrolls\\Scrolls.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
