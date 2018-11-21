@@ -1,12 +1,14 @@
-// degrade
-// manaContainerVolume = manaContainerVolume - ((1000000 / delta_time) * manaEvaporationRate);
-manaContainerVolume = manaContainerVolume - ((delta_time / 1000000) * manaEvaporationRate);
+if (!flag_construction) {
+	// degrade
+	// manaContainerVolume = manaContainerVolume - ((1000000 / delta_time) * manaEvaporationRate);
+	mana_container_volume = mana_container_volume - ((delta_time / 1000000) * mana_evaporation_rate);
 
-if (manaContainerVolume <= manaContainerVolumeMin) {
-	instance_destroy();
+	if (mana_container_volume <= mana_container_volume_min) {
+		instance_destroy();
+	}
+
+
+	// images should fade as item mana depletes
+	image_alpha = power(mana_container_volume / mana_container_volume_max, 2);
+	//show_debug_message(image_alpha);
 }
-
-
-// images should fade as item mana depletes
-image_alpha = power(manaContainerVolume / manaContainerVolumeMax, 2);
-//show_debug_message(image_alpha);

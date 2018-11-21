@@ -35,7 +35,6 @@
             "Key": "0122aa52-ecae-4f6e-b318-880f155efdc9",
             "Value": {
                 "id": "81c9ddb2-4e3a-43ab-9c43-809d8c5e151f",
-                "resourcePath": "objects\\oWall\\oWall.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -187,7 +186,6 @@
             "Key": "a001b256-3464-4e87-85f6-8027849a0c5e",
             "Value": {
                 "id": "955991f8-2d09-4ce5-b42e-b565ce3c7b47",
-                "resourcePath": "objects\\oWorldController\\oWorldController.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -297,7 +295,6 @@
         }
     ],
     "script_order": [
-        
     ],
     "tutorial": ""
 }
