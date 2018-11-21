@@ -378,7 +378,7 @@
             "Key": "a001b256-3464-4e87-85f6-8027849a0c5e",
             "Value": {
                 "id": "955991f8-2d09-4ce5-b42e-b565ce3c7b47",
-                "resourcePath": "objects\\oWorldController\\oWorldController.yy",
+                "resourcePath": "objects\\oDungionController\\oDungionController.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -412,6 +412,14 @@
                 "id": "3fc20a89-b22a-4389-866b-1429eda0b72f",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ae62346c-d0df-44da-ac24-9431bf1646c5",
+            "Value": {
+                "id": "84278d05-a0b3-4ce2-a73d-df7e63973469",
+                "resourcePath": "objects\\oWorldController\\oWorldController.yy",
+                "resourceType": "GMObject"
             }
         },
         {

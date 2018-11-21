@@ -8,7 +8,7 @@
 piece = ds_map_create();
 ds_map_set(piece, "x", 5);
 ds_map_set(piece, "y", 5);
-ds_map_set(piece, "object", "oSpellPieceBase");
+ds_map_set(piece, "object", "spell_part_plasma");
 
 
 //list of pieces
@@ -20,7 +20,7 @@ ds_list_add(pieces, piece);
 spell = ds_map_create();
 ds_map_set(spell, "name", "spell");
 ds_map_set(spell, "net_mp", 12);
-ds_map_set(spell, "spell_piece", "oSpellPieceBase");
+ds_map_set(spell, "spell_piece", "spell_part_plasma");
 ds_map_add_list(spell, "pieces", pieces);
 
 // list of spells
