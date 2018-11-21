@@ -24,7 +24,10 @@
             "eventtype": 0,
             "m_owner": "a001b256-3464-4e87-85f6-8027849a0c5e"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 65d8bca... thing
         },
         {
             "id": "0a8cf6bf-9c7c-4f60-bd57-0631fee65be3",
@@ -35,6 +38,9 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "a001b256-3464-4e87-85f6-8027849a0c5e"
+<<<<<<< HEAD
+>>>>>>> parent of 65d8bca... thing
+=======
 >>>>>>> parent of 65d8bca... thing
         }
     ],
@@ -67,7 +73,11 @@
             "resourceFilter": 1023,
             "value": "oPlayerCharacter",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "varName": "playerObject",
+=======
+            "varName": "obj_player",
+>>>>>>> parent of 65d8bca... thing
 =======
             "varName": "obj_player",
 >>>>>>> parent of 65d8bca... thing
