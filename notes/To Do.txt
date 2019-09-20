@@ -1,0 +1,10 @@
+todo:
+
+ - charactor movement should respect delts_time
+ 
+ - particle emulators should follow scource object
+ 
+ - make fire look kindof like fire
+ 
+ - begin designing spell editor
+ 
