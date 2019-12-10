@@ -1,15 +1,19 @@
 /// @description 
 
-if (construction_state == component_state.ghost) {
+// if placed in an invalid spot, draw as transparent red
+if (construction_state == bp_construction_state.placed_ghost) {
+	draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_orange, 0.5);
+}
+// if being directly manipulated, draw as grey, slightly transparent
+else if construction_state == bp_construction_state.manip_root {
+	draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_ltgray, 0.8);
+}
+// if being indirectly manipulated, draw as grey transparent
+else if (construction_state == bp_construction_state.manip_branch) {
 	draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_ltgray, 0.5);
 }
-else if construction_state == component_state.moving_snap {
-	draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_ltgray, 0.5);
-}
-else if (construction_state == component_state.moving_free) {
-	draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_ltgray, 0.5);
-}
-else if (construction_state == component_state.placed) {
+// if placed as part of the bp tree, standard draw
+else if (construction_state == bp_construction_state.placed) {
 	draw_sprite(sprite_index, 0, x, y);
 }
 

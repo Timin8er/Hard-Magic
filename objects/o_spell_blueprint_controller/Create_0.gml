@@ -2,18 +2,11 @@ event_inherited();
 
 //window_set_cursor(cr_none);
 
-enum component_state {
+enum bp_construction_state {
 	placed,
-	ghost,
-	moving_free,
-	moving_snap
-}
-
-enum component_collision_type {
-	square,
-	rectangle_tall,
-	rectangle_squat,
-	circle
+	placed_ghost,
+	manip_root,
+	manip_branch
 }
 
 enum bpSurf {
@@ -33,7 +26,7 @@ enum mouse_hover {
 	on
 }
 
-moving_component = noone;
+manip_bp_component = noone;
 
 
 
