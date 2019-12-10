@@ -2,16 +2,6 @@ if (!hold_input_for_a_step) {
 
 	// if we're bing maniplated
 	if construction_state == bp_construction_state.manip_root {
-		// place block?
-		//if (mouse_check_button_pressed(mb_left)) {
-		//	//show_debug_message("putting down")
-		//	s_place_bp();
-		//	exit; // nothing else here mappers
-		//}
-		
-		
-		// check for valid location
-		
 	
 		// get the object we're mousing over
 		var inst = collision_point(mouse_x, mouse_y, o_spell_component_blueprint, false, true)
@@ -29,6 +19,12 @@ if (!hold_input_for_a_step) {
 			// if mouse isn't hovering over anything, move free
 			x = mouse_x;
 			y = mouse_y;
+		}
+		
+		// move all children
+		for (var i=0; i<ds_list_size(_bp_children); i++) {
+			var child = ds_list_find_value(_bp_children, i);
+			with child {s_bp_repose_rel_parrent();}
 		}
 	}
 	

@@ -1,24 +1,26 @@
 // @desc set the paent blueprint of this object
 // @param parent
 
-_bp_parent = argument0;
+// if we already have a parrent, remove me as a child
+if (instance_exists(_bp_parent) and _bp_parent != argument0) {
+	var s = self;
+	with _bp_parent {s_bp_remove_child(s);}
+}
 
-if (instance_exists(_bp_parent)) {
+// if the new parent exists
+if (instance_exists(argument0)) {
+	
+	_bp_parent = argument0;
 
-	var dx = _bp_parent.x - x;
-	var dy = _bp_parent.y - y;
-
-	// save the 
-	_bp_parent_geo[bpParentGeo.r] = sqrt((dy*dy) / (dx*dx));
-	_bp_parent_geo[bpParentGeo.a] = arctan2(dy,dx);
-	_bp_parent_geo[bpParentGeo.b] = image_angle - _bp_parent.image_angle;
-
+	s_bp_anchor_to_parent();
 
 	// if I am not in the parents list of children, add me
 	if (ds_list_find_index(_bp_parent._bp_children, self)) {
 		var s = self;
-		with _bp_parent {
-			s_bp_add_child(s);
-		}
+		with _bp_parent {s_bp_add_child(s);}
 	}
+	
+// if the new parent does not exist
+} else {
+	_bp_parent = noone;
 }

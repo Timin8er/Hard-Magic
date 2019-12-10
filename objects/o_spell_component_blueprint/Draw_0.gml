@@ -14,7 +14,7 @@ else if construction_state == bp_construction_state.manip_root {
 }
 // if being indirectly manipulated, draw as grey transparent
 else if (construction_state == bp_construction_state.manip_branch) {
-	draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_ltgray, 0.5);
+	draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, c_green, 0.5);
 }
 // if placed as part of the bp tree, standard draw
 else if (construction_state == bp_construction_state.placed) {

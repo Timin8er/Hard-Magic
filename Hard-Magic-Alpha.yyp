@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0291ecca-a0c4-40e7-8233-6c8d1750f232",
+            "Value": {
+                "id": "7a1588e6-821f-4d04-b232-d2b53e259af8",
+                "resourcePath": "scripts\\s_bp_manip_children\\s_bp_manip_children.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "03ee1706-73af-4baf-be3a-80414c815d65",
             "Value": {
                 "id": "563e643e-0885-4547-9ed6-72ac5018b569",
@@ -236,6 +244,14 @@
                 "id": "7ae448fe-401c-46d1-bb50-a5dba733b79a",
                 "resourcePath": "objects\\oCharacter\\oCharacter.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "26d92039-6409-4598-9e8f-a95c5e37eaf9",
+            "Value": {
+                "id": "fd0f6936-1c9f-4ea0-bc51-67a97d9ac08b",
+                "resourcePath": "scripts\\s_bp_remove_child\\s_bp_remove_child.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -607,6 +623,14 @@
             }
         },
         {
+            "Key": "959357ff-7bb6-4b2d-8ebb-bbc9fc410341",
+            "Value": {
+                "id": "13bf9603-1dd6-4688-a13c-cd89dfd44c63",
+                "resourcePath": "scripts\\s_bp_anchor_to_parent\\s_bp_anchor_to_parent.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "96d3c2fb-aab0-49a8-bac3-d6f6f71594f2",
             "Value": {
                 "id": "24bbc5a3-e404-40e4-a660-34487a83f88f",
@@ -771,6 +795,14 @@
             "Value": {
                 "id": "27b6816d-1bc3-4ab3-a3d9-532e5d33e9d0",
                 "resourcePath": "scripts\\spell_wrap_and_save_map\\spell_wrap_and_save_map.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b539e8c8-b6b7-4d35-ade3-43b0208e1f8d",
+            "Value": {
+                "id": "8b7d4403-d49f-4a88-8ad4-796f66030fa5",
+                "resourcePath": "scripts\\s_bp_repose_rel_parrent\\s_bp_repose_rel_parrent.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1067,6 +1099,10 @@
         "aaa74226-e6fa-4f39-a1f6-c7dcbd5b9eb7",
         "96d3c2fb-aab0-49a8-bac3-d6f6f71594f2",
         "a034d57d-d674-4a38-9b55-5a0f4a38e187",
+        "26d92039-6409-4598-9e8f-a95c5e37eaf9",
+        "b539e8c8-b6b7-4d35-ade3-43b0208e1f8d",
+        "0291ecca-a0c4-40e7-8233-6c8d1750f232",
+        "959357ff-7bb6-4b2d-8ebb-bbc9fc410341",
         "1d2bac2f-d434-403d-9bc6-6c89fa7a9082",
         "b489332a-7958-462f-92b7-95f5359c391e",
         "7979a75b-cb0b-417a-b81f-3d5e3bc64d16",
