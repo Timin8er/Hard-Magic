@@ -21,6 +21,13 @@ enum bpSurf {
 	length // easy indicator for length of this enum
 }
 
+enum bpParentGeo {
+	r, // polar radius
+	a, // polar angel
+	b,  // relative rotation
+	length
+}
+
 enum mouse_hover {
 	off,
 	on

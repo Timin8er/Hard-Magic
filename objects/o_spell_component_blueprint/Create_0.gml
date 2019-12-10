@@ -4,6 +4,11 @@ has_surface = false;
 
 mouse_over = mouse_hover.off;
 
+_bp_parent = noone;
+_bp_parent_geo[bpParentGeo.length] = 0;
+
+_bp_children = ds_list_create();
+
 spell_editor_controller = instance_find(o_spell_blueprint_controller, 0);
 construction_state = bp_construction_state.placed;
 

@@ -1,8 +1,8 @@
 {
-    "id": "9995ba6f-91b5-4a7a-9a53-cb4c8bf3e8ef",
+    "id": "a034d57d-d674-4a38-9b55-5a0f4a38e187",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "s_surface_snap_square",
+    "name": "s_bp_add_child",
     "IsCompatibility": false,
     "IsDnD": false
 }

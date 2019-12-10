@@ -1,8 +1,6 @@
 // @desc place the blueprint piece
 
-show_debug_message("putting down : " + string(self))
-
-if (valid_spot) {
+if (valid_spot or is_root) {
 	construction_state = bp_construction_state.placed;
 } else {
 	construction_state = bp_construction_state.placed_ghost;
