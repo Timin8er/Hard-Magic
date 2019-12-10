@@ -11,7 +11,7 @@
         "8718afff-5e96-43ec-aae2-e3b52291eae1"
     ],
     "filterType": "GMObject",
-    "folderName": "construction",
+    "folderName": "blueprints",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

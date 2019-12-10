@@ -391,14 +391,6 @@
             }
         },
         {
-            "Key": "634cefa2-fddb-42a1-ad39-ab3e45750398",
-            "Value": {
-                "id": "6865db87-9ebf-4b85-ae43-3d32610552fe",
-                "resourcePath": "scripts\\s_collision_define_square\\s_collision_define_square.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "6566a9c6-4a78-4530-8307-dc12b70a8a5d",
             "Value": {
                 "id": "9b3d25bb-60fe-482e-96ea-02cef1049a2d",
@@ -434,7 +426,7 @@
             "Key": "68239f08-a4fe-41fb-96b0-31a7043ce037",
             "Value": {
                 "id": "846ffd0d-30b1-4367-8345-f3c339ac3b24",
-                "resourcePath": "scripts\\s_surface_refresh\\s_surface_refresh.yy",
+                "resourcePath": "scripts\\s_bp_surface_calc_vectors\\s_bp_surface_calc_vectors.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -474,7 +466,7 @@
             "Key": "72717e98-a1ae-4bf2-820b-63f36a97c893",
             "Value": {
                 "id": "19fe5e75-b33d-40b0-a3fc-5264230f6438",
-                "resourcePath": "scripts\\s_surface_define_rectangle_from_mask\\s_surface_define_rectangle_from_mask.yy",
+                "resourcePath": "scripts\\s_bp_surface_define_rectangle_from_mask\\s_bp_surface_define_rectangle_from_mask.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -506,7 +498,7 @@
             "Key": "7a076ee3-f4f0-4e1e-9055-365729bfd1c6",
             "Value": {
                 "id": "68051f71-c204-46a7-8b01-95df3dc56405",
-                "resourcePath": "objects\\o_spell_editor_controller\\o_spell_editor_controller.yy",
+                "resourcePath": "objects\\o_spell_blueprint_controller\\o_spell_blueprint_controller.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -575,6 +567,14 @@
             }
         },
         {
+            "Key": "8e815761-a5d3-4fbb-99c6-5f2c043c3631",
+            "Value": {
+                "id": "89476fa4-47aa-4eb9-b1b9-36a90afbafeb",
+                "resourcePath": "scripts\\s_bp_surface_set_n\\s_bp_surface_set_n.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8ef80803-6c1d-4c21-8595-300d94915ba2",
             "Value": {
                 "id": "cbb7c806-8ef5-4b0b-b44a-c1d37752ee9e",
@@ -610,7 +610,7 @@
             "Key": "9995ba6f-91b5-4a7a-9a53-cb4c8bf3e8ef",
             "Value": {
                 "id": "53dbc11d-94ea-4c97-ab17-6a72942ff6bd",
-                "resourcePath": "scripts\\s_collision_snap_square\\s_collision_snap_square.yy",
+                "resourcePath": "scripts\\s_surface_snap_square\\s_surface_snap_square.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -618,7 +618,7 @@
             "Key": "9a785d71-c4e6-44c2-a565-26d16114fdc0",
             "Value": {
                 "id": "28d74fdb-3ef2-4315-a333-586ddab19603",
-                "resourcePath": "objects\\o_spell_component_const\\o_spell_component_const.yy",
+                "resourcePath": "objects\\o_spell_component_blueprint\\o_spell_component_blueprint.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -700,6 +700,14 @@
                 "id": "f93aeb3f-544c-40ac-9527-e23500e84919",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "aaa74226-e6fa-4f39-a1f6-c7dcbd5b9eb7",
+            "Value": {
+                "id": "46bbf937-d7c3-4c0a-8ca0-46cee079a0a7",
+                "resourcePath": "scripts\\s_bp_surface_add_point\\s_bp_surface_add_point.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1002,7 +1010,7 @@
             "Key": "fc504385-cde1-425b-8a9a-c1128ad4b6a1",
             "Value": {
                 "id": "7eb4000e-0c0a-4a72-9906-8bfd99d04297",
-                "resourcePath": "scripts\\s_surface_snap\\s_surface_snap.yy",
+                "resourcePath": "scripts\\s_bp_surface_snap\\s_bp_surface_snap.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1027,11 +1035,12 @@
         "17aca882-427c-44e4-ba95-f5ea5c83a2d1",
         "abfe6484-e84b-43cf-ad98-b3a7fd57bca4",
         "d8301dcf-5c33-4fa2-a180-3f71f955d723",
-        "634cefa2-fddb-42a1-ad39-ab3e45750398",
         "9995ba6f-91b5-4a7a-9a53-cb4c8bf3e8ef",
         "72717e98-a1ae-4bf2-820b-63f36a97c893",
         "fc504385-cde1-425b-8a9a-c1128ad4b6a1",
         "68239f08-a4fe-41fb-96b0-31a7043ce037",
+        "8e815761-a5d3-4fbb-99c6-5f2c043c3631",
+        "aaa74226-e6fa-4f39-a1f6-c7dcbd5b9eb7",
         "1d2bac2f-d434-403d-9bc6-6c89fa7a9082",
         "b489332a-7958-462f-92b7-95f5359c391e",
         "7979a75b-cb0b-417a-b81f-3d5e3bc64d16",
