@@ -3,6 +3,8 @@
 // final order:
 // top right, bottom right, bottom left, top left
 
+has_surface = true;
+
 s_bp_surface_set_n(4)
 
 var top = bbox_top - y;

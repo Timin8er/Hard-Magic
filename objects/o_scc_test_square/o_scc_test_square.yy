@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_scc_test_square",
     "eventList": [
-        
+        {
+            "id": "bfe22152-a777-4645-acbf-0463ad83a328",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "8718afff-5e96-43ec-aae2-e3b52291eae1"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "17e2fddf-1458-4963-98a9-3c99fd422614",
+            "Value": {
+                "id": "3f85b44b-8066-4bc0-8b13-ccee09961f32",
+                "resourcePath": "scripts\\s_place_bp\\s_place_bp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1c110d9e-c952-4e55-8594-6a9c0c4c351a",
             "Value": {
                 "id": "639cfd2e-09c0-498a-9072-fac10e18fed9",
@@ -1041,6 +1049,7 @@
         "68239f08-a4fe-41fb-96b0-31a7043ce037",
         "8e815761-a5d3-4fbb-99c6-5f2c043c3631",
         "aaa74226-e6fa-4f39-a1f6-c7dcbd5b9eb7",
+        "17e2fddf-1458-4963-98a9-3c99fd422614",
         "1d2bac2f-d434-403d-9bc6-6c89fa7a9082",
         "b489332a-7958-462f-92b7-95f5359c391e",
         "7979a75b-cb0b-417a-b81f-3d5e3bc64d16",
