@@ -21,6 +21,8 @@ if (!hold_input_for_a_step) {
 			y = mouse_y;
 		}
 		
+		s_bp_snap_calc_points();
+		
 		// move all children
 		for (var i=0; i<ds_list_size(_bp_children); i++) {
 			var child = ds_list_find_value(_bp_children, i);

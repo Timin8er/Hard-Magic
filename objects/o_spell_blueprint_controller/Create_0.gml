@@ -33,6 +33,18 @@ enum mouse_hover {
 	on
 }
 
+enum bpSnap {
+	r, // polar radius
+	a, // polar angel
+	b,  // relative rotation
+	type, // type of point
+	x, // absolute x
+	y, // absolute y
+	w, // absolute rotation
+	occupied,
+	length
+}
+
 manip_bp_component = noone;
 
 

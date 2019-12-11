@@ -1,8 +1,6 @@
 // @desc set the paent blueprint of this object
 // @param parent
 
-show_debug_message(string(self) + " adding child " + string(argument0));
-
 var child = argument0;
 
 // if the child is not in my silt of children, add it

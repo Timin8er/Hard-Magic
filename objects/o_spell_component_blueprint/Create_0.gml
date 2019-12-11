@@ -17,3 +17,7 @@ hold_input_for_a_step = false;
 // when snaping this piece to another suface, this is how far away the oregin must be.
 bd_surface_snap_distance = bbox_bottom - y;
 
+bp_surface_vertexs = undefined;
+bp_surface_vertex_n = 0;
+bp_snap_points = undefined;
+bp_snap_points_n = 0;

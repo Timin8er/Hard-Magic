@@ -8,7 +8,8 @@
         "d8301dcf-5c33-4fa2-a180-3f71f955d723",
         "17e2fddf-1458-4963-98a9-3c99fd422614",
         "d4446907-7529-4f2f-ac05-de69dfd85648",
-        "f2db41e3-1465-4bfe-8ae0-417668b87847"
+        "f2db41e3-1465-4bfe-8ae0-417668b87847",
+        "46fe23c5-e9d1-4602-b40d-4d1e7ad9967c"
     ],
     "filterType": "GMScript",
     "folderName": "Spell Construction",

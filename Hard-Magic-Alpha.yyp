@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "408d5372-4f29-4cf9-8143-86f28fb94f2a",
+            "Value": {
+                "id": "a55f1c13-4e37-4ebc-8ad5-95e29173bd6d",
+                "resourcePath": "scripts\\s_bp_snap_add_point\\s_bp_snap_add_point.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "44e50233-7c71-4c07-806e-a079e99d83e7",
             "Value": {
                 "id": "f2415728-182c-4707-b4ce-79401a2e8c04",
@@ -343,6 +351,14 @@
             }
         },
         {
+            "Key": "46fe23c5-e9d1-4602-b40d-4d1e7ad9967c",
+            "Value": {
+                "id": "3a8d2192-ef27-44f1-a29c-8a1311825d76",
+                "resourcePath": "views\\46fe23c5-e9d1-4602-b40d-4d1e7ad9967c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "498ae3ae-1d26-46b1-ae95-3dd381043a81",
             "Value": {
                 "id": "7155ba90-f879-4a99-ab40-acc6c311d69b",
@@ -356,6 +372,14 @@
                 "id": "0125dbfe-38df-4368-a755-5f7fd32ca5fd",
                 "resourcePath": "objects\\o_test_dummy\\o_test_dummy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4bbaa112-ed12-49aa-84a3-febb161661d4",
+            "Value": {
+                "id": "34a18bd5-e2de-4d01-89ec-dbe5566813fd",
+                "resourcePath": "scripts\\s_bp_snap_set_n\\s_bp_snap_set_n.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -564,6 +588,14 @@
                 "id": "5242433c-24c6-4ade-af6c-c994afe78e18",
                 "resourcePath": "views\\84f45963-c664-4547-bc60-358fe14c2fa1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "858b1680-398a-4648-9847-e27692005828",
+            "Value": {
+                "id": "20f2618a-1d52-405b-a629-4d42f7a17bcd",
+                "resourcePath": "scripts\\s_bp_snap_calc_points\\s_bp_snap_calc_points.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -879,6 +911,14 @@
             }
         },
         {
+            "Key": "ce407979-e697-41aa-9ed4-02a7eeedf857",
+            "Value": {
+                "id": "1419b59e-2482-4b00-a034-0e2c15fc8df1",
+                "resourcePath": "scripts\\s_bp_snap_snap\\s_bp_snap_snap.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cfd29e1f-6ac6-4978-9df7-b8677d24c4b2",
             "Value": {
                 "id": "d02c6ca7-9fa4-44e1-9af3-315fc4655def",
@@ -1103,6 +1143,10 @@
         "b539e8c8-b6b7-4d35-ade3-43b0208e1f8d",
         "0291ecca-a0c4-40e7-8233-6c8d1750f232",
         "959357ff-7bb6-4b2d-8ebb-bbc9fc410341",
+        "408d5372-4f29-4cf9-8143-86f28fb94f2a",
+        "4bbaa112-ed12-49aa-84a3-febb161661d4",
+        "ce407979-e697-41aa-9ed4-02a7eeedf857",
+        "858b1680-398a-4648-9847-e27692005828",
         "1d2bac2f-d434-403d-9bc6-6c89fa7a9082",
         "b489332a-7958-462f-92b7-95f5359c391e",
         "7979a75b-cb0b-417a-b81f-3d5e3bc64d16",
