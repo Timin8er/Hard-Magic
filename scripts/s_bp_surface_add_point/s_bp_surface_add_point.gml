@@ -2,14 +2,12 @@
 // @param X
 // @param Y
 
-var nx = argument0;
-var ny = argument1;
+var dx = argument0;
+var dy = argument1;
 
-// set polar radius
-bp_surface_vertexs[bp_surface_vertex_n, bpSurf.r] = sqrt((nx*nx) + (ny*ny));
+var new_v = array_create(bpSurf.length);
 
-// set polar angel
-bp_surface_vertexs[bp_surface_vertex_n, bpSurf.a] = arctan2(ny, nx);
+new_v[bpSurf.r] = point_distance(0, 0, dx, dy); // polar radius
+new_v[bpSurf.a] = arctan2(dy, dx);// polar angel
 
-bp_surface_vertex_n += 1;
-
+ds_list_add(bp_surface_vertexs, new_v);

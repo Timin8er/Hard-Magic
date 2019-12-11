@@ -1,4 +1,4 @@
-// @desc appends a new surface vertex
+// @desc appends a new snap point
 // @param dX
 // @param dY
 // @param B
@@ -7,16 +7,18 @@ var dx = argument0;
 var dy = argument1;
 var B = argument2;
 
+var new_p = array_create(bpSnap.length);
+
 // set polar radius
-bp_snap_points[bp_snap_points_n, bpSnap.r] = sqrt((dx*dx) + (dy*dy));
+new_p[bpSnap.r] = point_distance(0,0,dx,dy);
 
 // set polar angel
-bp_snap_points[bp_snap_points_n, bpSnap.a] = arctan2(dy, dx);
+new_p[bpSnap.a] = arctan2(dy, dx);
 
 // angel of snap point
-bp_snap_points[bp_snap_points_n, bpSnap.b] = B;
+new_p[bpSnap.b] = B;
 
-bp_snap_points[bp_snap_points_n, bpSnap.occupied] = false;
+new_p[bpSnap.occupied] = false;
 
-bp_snap_points_n += 1;
+ds_list_add(bp_snap_points, new_p);
 

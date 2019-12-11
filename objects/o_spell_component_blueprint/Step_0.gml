@@ -6,7 +6,7 @@ if (!hold_input_for_a_step) {
 		// get the object we're mousing over
 		var inst = collision_point(mouse_x, mouse_y, o_spell_component_blueprint, false, true)
 		// if the mouse is hovering over a solid blueprint, snap to the edge
-		if (inst and inst.construction_state == bp_construction_state.placed and inst.has_surface) {
+		if (inst and inst.construction_state == bp_construction_state.placed and s_bp_has_surface(inst)) {
 			valid_spot = true
 			var s = self
 			// move to snap point
@@ -21,7 +21,11 @@ if (!hold_input_for_a_step) {
 			y = mouse_y;
 		}
 		
+		// readjust were aur snap points are
 		s_bp_snap_calc_points();
+		
+		// attempt to snap to points
+		s_bp_snap_snap();
 		
 		// move all children
 		for (var i=0; i<ds_list_size(_bp_children); i++) {

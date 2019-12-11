@@ -1,12 +1,16 @@
 /// @desc recalc the absolute location and rotation of the snap points
 
-for (var i = 0; i < bp_snap_points_n; i ++) {
+for (var i = 0; i < ds_list_size(bp_snap_points); i ++) {
 	
-	var beta = image_angle + bp_snap_points[i, bpSnap.a]; // new angel from origin to vertex, beta = theta + alpha
+	var point = ds_list_find_value(bp_snap_points, i);
 	
-	bp_snap_points[i, bpSnap.x] = x + (bp_snap_points[i, bpSnap.r] * cos(beta));
+	var beta = image_angle + point[bpSnap.a]; // new angel from origin to vertex, beta = theta + alpha
 	
-	bp_snap_points[i, bpSnap.y] = y + (bp_snap_points[i, bpSnap.r] * sin(beta));
+	point[bpSnap.x] = x + (point[bpSnap.r] * cos(beta));
 	
-	bp_snap_points[i, bpSnap.w] = image_angle + bp_snap_points[i, bpSnap.b];
+	point[bpSnap.y] = y + (point[bpSnap.r] * sin(beta));
+	
+	point[bpSnap.w] = image_angle + point[bpSnap.b];
+	
+	ds_list_replace(bp_snap_points, i, point);
 }

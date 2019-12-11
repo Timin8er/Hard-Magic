@@ -23,20 +23,27 @@ else if (construction_state == bp_construction_state.placed) {
 
 // draw snap points
 if (construction_state == bp_construction_state.manip_root or construction_state == bp_construction_state.placed) {
-	for (var i=0; i<bp_snap_points_n; i++) {
-		if (!bp_snap_points[i, bpSnap.occupied]) {
-			draw_circle_color(bp_snap_points[i, bpSnap.x], bp_snap_points[i, bpSnap.y], 5, c_orange, c_black, false);
+	for (var i=0; i<ds_list_size(bp_snap_points); i++) {
+		var point = ds_list_find_value(bp_snap_points, i);
+		
+		if (!point[bpSnap.occupied]) {
+			draw_circle_color(point[bpSnap.x], point[bpSnap.y], 5, c_orange, c_black, false);
 		}
 	}
 }
 
 // draw surface snap
-if (false){
-	var l = bp_surface_vertex_n -1;
+if (true){
+	var l = ds_list_size(bp_surface_vertexs);
 	for (var i=0; i < l; i++) {
-		draw_line_width_color(bp_surface_vertexs[i,bpSurf.x], bp_surface_vertexs[i,bpSurf.y], bp_surface_vertexs[i+1,bpSurf.x], bp_surface_vertexs[i+1,bpSurf.y], 2, c_orange, c_orange);
+		var j = i+1;
+		if (j >= ds_list_size(bp_surface_vertexs)) {j=0;}
+		
+		var vi = ds_list_find_value(bp_surface_vertexs, i)
+		var vj = ds_list_find_value(bp_surface_vertexs, j)
+		
+		draw_line_width_color(vi[bpSurf.x], vi[bpSurf.y], vj[bpSurf.x], vj[bpSurf.y], 2, c_orange, c_orange);
 	}
-	draw_line_width_color(bp_surface_vertexs[l,bpSurf.x], bp_surface_vertexs[l,bpSurf.y], bp_surface_vertexs[0,bpSurf.x], bp_surface_vertexs[0,bpSurf.y], 2, c_orange, c_orange)
 }
 
 // draw snap points

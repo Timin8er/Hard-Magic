@@ -1,4 +1,4 @@
-/// @description
+/// @desc
 
 if (!hold_input_for_a_step) {
 	// if I am not being manipulated
