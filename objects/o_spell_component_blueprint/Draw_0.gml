@@ -32,6 +32,14 @@ if (construction_state == bp_construction_state.manip_root or construction_state
 	}
 }
 
+
+if (bp_parent_snap_point_index_mine != undefined) {
+	var op = ds_list_find_value(bp_parent_snap.bp_snap_points, bp_parent_snap_point_index_other);
+	var mp = ds_list_find_value(bp_snap_points, bp_parent_snap_point_index_mine);
+	
+	draw_circle_color(op[bpSnap.x], op[bpSnap.y], 8, c_green, c_black, false);
+	draw_circle_color(mp[bpSnap.x], mp[bpSnap.y], 8, c_green, c_black, false);
+}
 // draw surface snap
 if (true){
 	var l = ds_list_size(bp_surface_vertexs);

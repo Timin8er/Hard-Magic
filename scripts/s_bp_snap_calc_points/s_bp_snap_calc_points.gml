@@ -1,6 +1,6 @@
 /// @desc recalc the absolute location and rotation of the snap points
 
-for (var i = 0; i < ds_list_size(bp_snap_points); i ++) {
+for (var i=0; i < ds_list_size(bp_snap_points); i++) {
 	
 	var point = ds_list_find_value(bp_snap_points, i);
 	
