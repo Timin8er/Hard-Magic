@@ -29,5 +29,5 @@ var dis = d + othero.bd_surface_snap_distance;
 othero.x = mouse_x + (dis * cos(beta));
 othero.y = mouse_y + (dis * sin(beta));
 
-othero.image_angle = cv[bpSurf.v];
+othero.image_angle = radtodeg(cv[bpSurf.v]);
 

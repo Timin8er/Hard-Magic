@@ -16,7 +16,7 @@ for (var i=0; i<ds_list_size(_bp_children); i++) {
 	with child {s_place_bp();}
 }
 
-if (bp_parent_snap != undefined) {
+if (bp_parent_snap != noone) {
 	s_bp_set_parent(bp_parent_snap);
 	
 	// occupy the other point

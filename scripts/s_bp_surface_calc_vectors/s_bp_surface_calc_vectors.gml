@@ -5,7 +5,7 @@ for (var i = 0; i < ds_list_size(bp_surface_vertexs); i ++) {
 	
 	var vertex = ds_list_find_value(bp_surface_vertexs, i);
 	
-	var beta = image_angle + vertex[bpSurf.a]; // new angel from origin to vertex, beta = theta + alpha
+	var beta = degtorad(image_angle) + vertex[bpSurf.a]; // new angel from origin to vertex, beta = theta + alpha
 	
 	// new x position
 	vertex[bpSurf.x] = x + (vertex[bpSurf.r] * cos(beta));
