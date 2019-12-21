@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "2d0ddb40-b463-4b9d-8e3b-4fe504623a97",
+            "Value": {
+                "id": "1fa90225-4535-4b50-962e-a2fd8e2b896b",
+                "resourcePath": "sprites\\spSnapPoint\\spSnapPoint.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2dbef193-4005-4fb4-b448-8944a2d2a884",
             "Value": {
                 "id": "72126fde-544c-40eb-b1b4-4f725e87be86",

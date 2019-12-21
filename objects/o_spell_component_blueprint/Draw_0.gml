@@ -27,20 +27,19 @@ if (construction_state == bp_construction_state.manip_root or construction_state
 		var point = ds_list_find_value(bp_snap_points, i);
 		
 		if (!point[bpSnap.occupied]) {
-			draw_circle_color(point[bpSnap.x], point[bpSnap.y], 5, c_orange, c_black, false);
-			draw_line(point[bpSnap.x], point[bpSnap.y], point[bpSnap.x] + 10*cos(point[bpSnap.w]), point[bpSnap.y] + 10*sin(point[bpSnap.w]));
+			draw_sprite_ext(spSnapPoint, 0, point[bpSnap.x], point[bpSnap.y], 1, 1, radtodeg(point[bpSnap.w]), c_white, 1)
 		}
 	}
 }
 
 
-if (bp_parent_snap_point_index_mine != undefined) {
-	var op = ds_list_find_value(bp_parent_snap.bp_snap_points, bp_parent_snap_point_index_other);
-	var mp = ds_list_find_value(bp_snap_points, bp_parent_snap_point_index_mine);
+//if (bp_parent_snap_point_index_mine != undefined) {
+//	var op = ds_list_find_value(bp_parent_snap.bp_snap_points, bp_parent_snap_point_index_other);
+//	var mp = ds_list_find_value(bp_snap_points, bp_parent_snap_point_index_mine);
 	
-	draw_circle_color(op[bpSnap.x], op[bpSnap.y], 8, c_green, c_black, false);
-	draw_circle_color(mp[bpSnap.x], mp[bpSnap.y], 8, c_green, c_black, false);
-}
+//	draw_circle_color(op[bpSnap.x], op[bpSnap.y], 8, c_green, c_black, false);
+//	draw_circle_color(mp[bpSnap.x], mp[bpSnap.y], 8, c_green, c_black, false);
+//}
 
 
 
