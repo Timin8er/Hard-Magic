@@ -1,20 +1,20 @@
 {
-    "id": "ed5dfa5b-39aa-4f0d-8a4d-9203fa9bd5b9",
+    "id": "d2e0657d-c05d-44ec-bbb1-618b722790b3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "btn_spell_part",
+    "name": "btn_room_transition",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "2f3757b0-aa96-48c1-81e4-52e73c7256eb",
+            "id": "7071ab07-6cce-403c-b8cd-5965fd493dfb",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b",
-            "propertyId": "a9e09ca7-8d3c-46bb-a16f-b7b496da44ad",
-            "value": ""
+            "propertyId": "94d31f2a-378b-4546-a35f-4b95f62fb1e4",
+            "value": "s_button_room_transition"
         }
     ],
     "parentObjectId": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b",
@@ -33,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "9f1197e2-150d-4e3f-9ffa-56e17c762254",
+            "id": "bdaf7394-bf87-4962-a2c3-b72f79d023d1",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -41,13 +41,13 @@
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
-            "resourceFilter": 256,
-            "value": "o_spell_component_blueprint",
-            "varName": "component_class",
+            "resourceFilter": 512,
+            "value": "noone",
+            "varName": "room_destination",
             "varType": 5
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "5d779f32-c300-43e0-9065-23d7f9f0dd07",
     "visible": true
 }

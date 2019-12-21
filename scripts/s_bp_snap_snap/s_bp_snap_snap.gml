@@ -1,6 +1,6 @@
 // @desc search for and snap to a snap point
 
-var snap_range = 20;
+var snap_range = 50;
 var snap_field = pi/4;
 
 bp_parent_snap = noone;

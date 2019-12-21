@@ -193,6 +193,20 @@
             "value": "0",
             "varName": "view_reletive_corner_y",
             "varType": 0
+        },
+        {
+            "id": "94d31f2a-378b-4546-a35f-4b95f62fb1e4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 16,
+            "value": "noone",
+            "varName": "click_action",
+            "varType": 5
         }
     ],
     "solid": false,
