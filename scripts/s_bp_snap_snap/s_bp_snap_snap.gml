@@ -17,7 +17,7 @@ var dis = 99999; // closest distance
 for (var o=0; o<instance_number(o_spell_component_blueprint); o++) {
 	var obj = instance_find(o_spell_component_blueprint, o);
 	
-	if (obj != self) {
+	if (obj != self and obj.construction_state == bp_construction_state.placed) {
 		// for each snapp point in that blueprint
 		for (var i=0; i < ds_list_size(obj.bp_snap_points); i++) {
 			var other_snap = ds_list_find_value(obj.bp_snap_points, i);

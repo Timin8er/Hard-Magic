@@ -15,7 +15,7 @@ if (instance_exists(argument0)) {
 	s_bp_anchor_to_parent();
 	
 	// if I am not in the parents list of children, add me
-	if (ds_list_find_index(_bp_parent._bp_children, self)) {
+	if (ds_list_find_index(_bp_parent._bp_children, self) == -1) {
 		var s = self;
 		with _bp_parent {s_bp_add_child(s);}
 	}

@@ -39,6 +39,13 @@ if (!hold_input_for_a_step) {
 		}
 	} else { // place me
 		s_place_bp();
+		
+		// if there is a valid snap point, attach to that
+		if (bp_parent_snap != noone) {
+			s_bp_set_parent(bp_parent_snap);
+			s_bp_anchor_to_parent();
+			construction_state = bp_construction_state.placed;
+		}
 	}
 }
 

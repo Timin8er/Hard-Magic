@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "469f3eb6-59d1-4d01-a2f8-62b7c5fcae84",
+            "Value": {
+                "id": "e00dab9a-817a-4b94-88c4-37bbb0c050d3",
+                "resourcePath": "sprites\\spBlueprintTile\\spBlueprintTile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "46fe23c5-e9d1-4602-b40d-4d1e7ad9967c",
             "Value": {
                 "id": "3a8d2192-ef27-44f1-a29c-8a1311825d76",
