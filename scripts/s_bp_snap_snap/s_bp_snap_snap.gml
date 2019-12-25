@@ -12,7 +12,6 @@ var dis = 99999; // closest distance
 // ===== locate the closest snap point too one of my snap points
 //show_debug_message("checking " + string(instance_number(o_spell_component_blueprint)) + " blueprints");
 
-
 // for each blueprint
 for (var o=0; o<instance_number(o_spell_component_blueprint); o++) {
 	var obj = instance_find(o_spell_component_blueprint, o);
@@ -21,11 +20,12 @@ for (var o=0; o<instance_number(o_spell_component_blueprint); o++) {
 		// for each snapp point in that blueprint
 		for (var i=0; i < ds_list_size(obj.bp_snap_points); i++) {
 			var other_snap = ds_list_find_value(obj.bp_snap_points, i);
-		
+			
 			// for each of my snap points
+			s = "Snap point betas: ";
 			for (var j=0; j < ds_list_size(bp_snap_points); j++) {
 				var my_snap = ds_list_find_value(bp_snap_points, j);
-			
+				s += (string(my_snap[bpSnap.r]) + " - ");
 				// if both snap points are of the same type and are unoccupied
 				if (!my_snap[bpSnap.occupied] and !other_snap[bpSnap.occupied] and my_snap[bpSnap.type] == other_snap[bpSnap.type]) {
 				
@@ -48,8 +48,6 @@ for (var o=0; o<instance_number(o_spell_component_blueprint); o++) {
 	}
 }
 
-//show_debug_message(other_closest_snap_point);
-
 // if no valid pair found, exit
 if (bp_parent_snap == noone) {exit;}
 
@@ -65,6 +63,6 @@ x = other_snap[bpSnap.x] + (my_snap[bpSnap.r] * cos(theta + my_snap[bpSnap.a]));
 
 y = other_snap[bpSnap.y] + (my_snap[bpSnap.r] * sin(theta + my_snap[bpSnap.a]));
 
-image_angle = radtodeg(theta + pi);
+image_angle = -radtodeg(theta + pi);
 
 s_bp_snap_calc_points();

@@ -18,7 +18,7 @@ else if (construction_state == bp_construction_state.manip_branch) {
 }
 // if placed as part of the bp tree, standard draw
 else if (construction_state == bp_construction_state.placed) {
-	draw_sprite(sprite_index, 0, x, y);
+	draw_sprite_ext(sprite_index, 0, x, y, 1, 1, image_angle, c_white, 1);
 }
 
 // draw snap points
@@ -27,7 +27,7 @@ if (construction_state == bp_construction_state.manip_root or construction_state
 		var point = ds_list_find_value(bp_snap_points, i);
 		
 		if (!point[bpSnap.occupied]) {
-			draw_sprite_ext(spSnapPoint, 0, point[bpSnap.x], point[bpSnap.y], 1, 1, radtodeg(point[bpSnap.w]), c_white, 1)
+			draw_sprite_ext(spSnapPoint, 0, point[bpSnap.x], point[bpSnap.y], 1, 1, radtodeg(-point[bpSnap.w]), c_white, 1)
 		}
 	}
 }
@@ -40,8 +40,6 @@ if (construction_state == bp_construction_state.manip_root or construction_state
 //	draw_circle_color(op[bpSnap.x], op[bpSnap.y], 8, c_green, c_black, false);
 //	draw_circle_color(mp[bpSnap.x], mp[bpSnap.y], 8, c_green, c_black, false);
 //}
-
-
 
 // draw surface snap
 //if (true){

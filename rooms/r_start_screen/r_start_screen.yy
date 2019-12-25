@@ -25,7 +25,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_597EFFE6","id": "9ce71bc5-5c7d-48e5-863a-5d4c8506d5f6","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_597EFFE6","objId": "d2e0657d-c05d-44ec-bbb1-618b722790b3","properties": [{"id": "bd0f3030-f3d4-4667-a246-4ea84ec1455d","modelName": "GMOverriddenProperty","objectId": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b","propertyId": "a9e09ca7-8d3c-46bb-a16f-b7b496da44ad","mvc": "1.0","value": "Scroll Editor"},{"id": "9aa95059-3ca8-4725-8b68-aec5edecc315","modelName": "GMOverriddenProperty","objectId": "d2e0657d-c05d-44ec-bbb1-618b722790b3","propertyId": "bdaf7394-bf87-4962-a2c3-b72f79d023d1","mvc": "1.0","value": "r_scroll_editor"}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 96,"y": 128}
+{"name": "inst_597EFFE6","id": "9ce71bc5-5c7d-48e5-863a-5d4c8506d5f6","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_597EFFE6","objId": "d2e0657d-c05d-44ec-bbb1-618b722790b3","properties": [{"id": "bd0f3030-f3d4-4667-a246-4ea84ec1455d","modelName": "GMOverriddenProperty","objectId": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b","propertyId": "a9e09ca7-8d3c-46bb-a16f-b7b496da44ad","mvc": "1.0","value": "Scroll Editor"},{"id": "9aa95059-3ca8-4725-8b68-aec5edecc315","modelName": "GMOverriddenProperty","objectId": "d2e0657d-c05d-44ec-bbb1-618b722790b3","propertyId": "bdaf7394-bf87-4962-a2c3-b72f79d023d1","mvc": "1.0","value": "r_scroll_editor"}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 96,"y": 128}
             ],
             "layers": [
 
@@ -87,16 +87,16 @@
     },
     "roomSettings":     {
         "id": "85c22941-2e90-4d57-bdda-e3dd15b41425",
-        "Height": 768,
+        "Height": 720,
         "inheritRoomSettings": false,
         "modelName": "GMRoomSettings",
         "persistent": false,
         "mvc": "1.0",
-        "Width": 1024
+        "Width": 1280
     },
     "mvc": "1.0",
     "views": [
-{"id": "4bef3569-021f-445d-9810-7cd4105f3074","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
+{"id": "4bef3569-021f-445d-9810-7cd4105f3074","hborder": 32,"hport": 768,"hspeed": -1,"hview": 1080,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1440,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "12a03bcd-ecc8-48b5-bba7-fc20a09030b6","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "960efc07-855d-42ba-9fc2-3a1ed8b7bed8","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},
 {"id": "a75ee873-f251-4ac6-b4ff-898717a189fc","hborder": 32,"hport": 768,"hspeed": -1,"hview": 768,"inherit": false,"modelName": "GMRView","objId": "00000000-0000-0000-0000-000000000000","mvc": "1.0","vborder": 32,"visible": false,"vspeed": -1,"wport": 1024,"wview": 1024,"xport": 0,"xview": 0,"yport": 0,"yview": 0},

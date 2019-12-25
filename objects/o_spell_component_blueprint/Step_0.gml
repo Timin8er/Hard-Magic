@@ -37,3 +37,4 @@ if (!hold_input_for_a_step) {
 } else {
 	hold_input_for_a_step = false;
 }
+//image_angle+=0.5;
