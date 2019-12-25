@@ -879,6 +879,14 @@
             }
         },
         {
+            "Key": "b9fc1554-f57e-4c7c-912a-9004a0d0baab",
+            "Value": {
+                "id": "9c71754a-286a-4e4a-81b1-92325b337bd7",
+                "resourcePath": "objects\\o_scc_test_square_so\\o_scc_test_square_so.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bab3afa2-e9a0-4b9e-b815-715b697c2d64",
             "Value": {
                 "id": "381d0e17-1620-41b3-b3ca-738e9c0948fb",

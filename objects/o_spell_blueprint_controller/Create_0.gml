@@ -23,8 +23,8 @@ enum bpSurf {
 
 enum bpParentGeo {
 	r, // polar radius
-	a, // polar angel
-	b,  // relative rotation
+	a, // polar angel, radians
+	b,  // relative rotation, degreese
 	length
 }
 

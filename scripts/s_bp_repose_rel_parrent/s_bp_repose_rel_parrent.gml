@@ -1,6 +1,6 @@
 // @desc repositions this object relative to its parent
 
-var al = _bp_parent_geo[bpParentGeo.a] + _bp_parent.image_angle;
+var al = _bp_parent_geo[bpParentGeo.a] + degtorad(-_bp_parent.image_angle);
 
 x = _bp_parent.x + _bp_parent_geo[bpParentGeo.r] * cos(al);
 y = _bp_parent.y + _bp_parent_geo[bpParentGeo.r] * sin(al);
