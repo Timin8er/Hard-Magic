@@ -423,6 +423,14 @@
             }
         },
         {
+            "Key": "4ec4539d-75b4-4fa3-aa28-8ea6861f4238",
+            "Value": {
+                "id": "2541eede-104f-41e3-aee1-c45032d017d3",
+                "resourcePath": "scripts\\s_bp_surface_within\\s_bp_surface_within.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "577e5769-5c86-41f3-8889-c8b1ebc36926",
             "Value": {
                 "id": "41becce3-abe4-4d3e-b5ae-41dfd2178691",
@@ -1199,6 +1207,7 @@
         "fc504385-cde1-425b-8a9a-c1128ad4b6a1",
         "68239f08-a4fe-41fb-96b0-31a7043ce037",
         "aaa74226-e6fa-4f39-a1f6-c7dcbd5b9eb7",
+        "4ec4539d-75b4-4fa3-aa28-8ea6861f4238",
         "72717e98-a1ae-4bf2-820b-63f36a97c893",
         "96d3c2fb-aab0-49a8-bac3-d6f6f71594f2",
         "a034d57d-d674-4a38-9b55-5a0f4a38e187",

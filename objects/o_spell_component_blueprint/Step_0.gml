@@ -2,19 +2,24 @@ if (!hold_input_for_a_step) {
 
 	// if we're bing maniplated
 	if construction_state == bp_construction_state.manip_root {
-	
+		
+		// ========== determine weather the mouse is within an objects surface ==========
+		var within = false;
 		// get the object we're mousing over
 		var inst = collision_point(mouse_x, mouse_y, o_spell_component_blueprint, false, true)
 		// if the mouse is hovering over a solid blueprint, snap to the edge
-		if (inst and inst.construction_state == bp_construction_state.placed and s_bp_has_surface(inst)) {
-			valid_spot = true
+		if (inst and inst.construction_state == bp_construction_state.placed) {
 			var s = self
 			// move to snap point
 			with inst {
-				s_bp_surface_snap(s);
+				if (s_bp_surface_within(mouse_x, mouse_y)) {
+					s_bp_surface_snap(s);
+					within = true;
+				}
 			}
 		// else, move to the mouse curser
-		} else {
+		}
+		if (!within) {
 			valid_spot = false
 			// if mouse isn't hovering over anything, move free
 			x = mouse_x;
