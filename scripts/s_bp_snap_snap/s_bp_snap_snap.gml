@@ -54,7 +54,7 @@ _bp_chosen_parent = bp_parent_snap
 // retrieve the point pair
 
 var other_snap = ds_list_find_value(bp_parent_snap.bp_snap_points, bp_parent_snap_point_index_other);
-var my_snap = ds_list_find_value(obj.bp_snap_points, bp_parent_snap_point_index_mine);
+var my_snap = ds_list_find_value(bp_snap_points, bp_parent_snap_point_index_mine);
 
 // get my new rotation
 var theta = other_snap[bpSnap.w] - my_snap[bpSnap.b];
