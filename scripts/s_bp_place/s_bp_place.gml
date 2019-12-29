@@ -17,8 +17,8 @@ count ++
 
 // if given a new parent, set the parent
 if (par != noone) {
-	with par {s_bp_add_child(obj);
-		obj._bp_chosen_parent = noone}
+	s_bp_add_child(par, obj);
+	obj._bp_chosen_parent = noone;
 
 // else if the object already has a parent, move to where it should be
 } else if (obj._bp_parent != noone) {

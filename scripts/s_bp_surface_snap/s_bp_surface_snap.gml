@@ -1,7 +1,11 @@
 // @desc snaps the given object to me
-// @param othero
+// @param place_obj
+// @param on_obj
 
-var othero = argument0;
+var place_obj = argument[0];
+var on_obj = self;
+
+if (argument_count >= 2) {on_obj = argument[1];}
 
 // get the closesed vertex
 var d = 99999999999;
@@ -10,8 +14,8 @@ var cv = -1; // vertex closest
 // ========== if within the shape ==========
 
 // find the closest edge
-for (var i=0; i<ds_list_size(bp_surface_vertexs); i++) {
-	var vertex = ds_list_find_value(bp_surface_vertexs, i);
+for (var i=0; i<ds_list_size(on_obj.bp_surface_vertexs); i++) {
+	var vertex = ds_list_find_value(on_obj.bp_surface_vertexs, i);
 	var dp = abs(vertex[bpSurf.m] * mouse_x - mouse_y + vertex[bpSurf.b]) / vertex[bpSurf.den];
 	
 	if dp < d{
@@ -24,10 +28,10 @@ for (var i=0; i<ds_list_size(bp_surface_vertexs); i++) {
 var beta = cv[bpSurf.v] - (pi/2);
 
 // distance to point
-var dis = d + othero.bd_surface_snap_distance;
+var dis = d + place_obj.bd_surface_snap_distance;
 
-// 
-othero.x = mouse_x + (dis * cos(beta));
-othero.y = mouse_y + (dis * sin(beta));
+// move the placing object to its new location
+place_obj.x = mouse_x + (dis * cos(beta));
+place_obj.y = mouse_y + (dis * sin(beta));
 
-othero.image_angle = radtodeg(- cv[bpSurf.v]);
+place_obj.image_angle = radtodeg(- cv[bpSurf.v]);

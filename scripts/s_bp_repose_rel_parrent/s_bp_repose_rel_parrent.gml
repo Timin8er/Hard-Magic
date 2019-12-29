@@ -1,21 +1,18 @@
 // @desc repositions this object relative to its parent
 
-if (argument_count >= 1) {
-	with argument[0] {
-		return s_bp_repose_rel_parrent();
-	}
-}
+var obj = self;
 
+if (argument_count >= 1) { obj = argument[0];}
 
-var al = _bp_parent_geo[bpParentGeo.a] + degtorad(-_bp_parent.image_angle);
+var al = obj._bp_parent_geo[bpParentGeo.a] + degtorad(-obj._bp_parent.image_angle);
 
-x = _bp_parent.x + _bp_parent_geo[bpParentGeo.r] * cos(al);
-y = _bp_parent.y + _bp_parent_geo[bpParentGeo.r] * sin(al);
+obj.x = obj._bp_parent.x + obj._bp_parent_geo[bpParentGeo.r] * cos(al);
+obj.y = obj._bp_parent.y + obj._bp_parent_geo[bpParentGeo.r] * sin(al);
 
-image_angle = _bp_parent_geo[bpParentGeo.b] + _bp_parent.image_angle
+obj.image_angle = obj._bp_parent_geo[bpParentGeo.b] + obj._bp_parent.image_angle
 
 // move all children
-for (var i=0; i<ds_list_size(_bp_children); i++) {
-	var child = ds_list_find_value(_bp_children, i);
-	with child {s_bp_repose_rel_parrent();}
+for (var i=0; i<ds_list_size(obj._bp_children); i++) {
+	var child = ds_list_find_value(obj._bp_children, i);
+	s_bp_repose_rel_parrent(child);
 }
