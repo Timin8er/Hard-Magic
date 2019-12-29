@@ -1,6 +1,6 @@
 /// @desc
 
-if (!hold_input_for_a_step) {
+if (!hold_input_for_a_step and false) {
 	// if I am not being manipulated
 	if (construction_state == bp_construction_state.placed || construction_state == bp_construction_state.placed_ghost) {
 		

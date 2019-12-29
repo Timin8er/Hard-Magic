@@ -3,9 +3,9 @@
 var snap_range = 50;
 var snap_field = pi/4;
 
-bp_parent_snap = noone;
-bp_parent_snap_point_index_mine = undefined;
-bp_parent_snap_point_index_other = undefined;
+var bp_parent_snap = noone;
+var bp_parent_snap_point_index_mine = undefined;
+var bp_parent_snap_point_index_other = undefined;
 
 var dis = 99999; // closest distance
 
@@ -51,6 +51,7 @@ for (var o=0; o<instance_number(o_spell_component_blueprint); o++) {
 // if no valid pair found, exit
 if (bp_parent_snap == noone) {exit;}
 
+_bp_chosen_parent = bp_parent_snap
 // retrieve the point pair
 var other_snap = ds_list_find_value(bp_parent_snap.bp_snap_points, bp_parent_snap_point_index_other);
 var my_snap = ds_list_find_value(bp_parent_snap.bp_snap_points, bp_parent_snap_point_index_mine);

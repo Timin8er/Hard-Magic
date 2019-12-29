@@ -1,5 +1,12 @@
 // @desc repositions this object relative to its parent
 
+if (argument_count >= 1) {
+	with argument[0] {
+		return s_bp_repose_rel_parrent();
+	}
+}
+
+
 var al = _bp_parent_geo[bpParentGeo.a] + degtorad(-_bp_parent.image_angle);
 
 x = _bp_parent.x + _bp_parent_geo[bpParentGeo.r] * cos(al);

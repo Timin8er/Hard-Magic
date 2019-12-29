@@ -1,9 +1,19 @@
 // @desc returns true if the the given point is within this objects surface
 // @param X
 // @param Y
+// @param object
 
-var px = argument0;
-var py = argument1;
+var px = argument[0];
+var py = argument[1];
+
+// if given a third input that is a object, use it instead of self
+if (argument_count >= 3) {
+	var within
+	with argument[2] {
+		within = s_bp_surface_within(px, py);
+	}
+	return within;
+}
 
 var nvert = ds_list_size(bp_surface_vertexs);
 

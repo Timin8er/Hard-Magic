@@ -3,7 +3,7 @@
 
 var child = argument0;
 
-// if the child is not in my silt of children, add it
+// if the child is not in my list of children, add it
 if (!ds_list_find_index(_bp_children, child)) {
 	ds_list_add(_bp_children, child);
 }

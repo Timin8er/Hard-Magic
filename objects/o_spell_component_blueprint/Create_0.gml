@@ -4,6 +4,7 @@ is_root = false;
 mouse_over = mouse_hover.off;
 
 _bp_parent = noone;
+_bp_chosen_parent = noone
 _bp_parent_geo[bpParentGeo.length] = 0;
 
 _bp_children = ds_list_create();
