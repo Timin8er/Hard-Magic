@@ -46,6 +46,10 @@ enum bpSnap {
 }
 
 manip_bp_component = noone;
+root_bp_component = noone;
+
+spell_title = "Untitled Spell";
+spell_cost = 0.0;
 
 
 

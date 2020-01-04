@@ -162,7 +162,7 @@
             "Key": "1d2bac2f-d434-403d-9bc6-6c89fa7a9082",
             "Value": {
                 "id": "4f726049-1783-428a-b384-1b8f22c77fca",
-                "resourcePath": "scripts\\spell_component_get_save_map\\spell_component_get_save_map.yy",
+                "resourcePath": "scripts\\s_bp_get_tree_save_map\\s_bp_get_tree_save_map.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "a4c6ffe4-c343-43e6-a914-6bbb57856755",
+            "Value": {
+                "id": "0a50c216-dc89-4e1b-8f6f-f38610e91208",
+                "resourcePath": "scripts\\s_bp_load_tree_from_save_map\\s_bp_load_tree_from_save_map.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a59ab0e3-3d01-499d-bb5a-02643b60c3bf",
             "Value": {
                 "id": "b6b8c001-6637-4495-99ac-eb8936c30630",
@@ -842,7 +850,7 @@
             "Key": "abfe6484-e84b-43cf-ad98-b3a7fd57bca4",
             "Value": {
                 "id": "5954ee80-c71e-4d0a-8c1d-1736299e0372",
-                "resourcePath": "scripts\\s_spawn_new_component\\s_spawn_new_component.yy",
+                "resourcePath": "scripts\\s_spawn_bp\\s_spawn_bp.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -924,6 +932,14 @@
                 "id": "873a04a3-b5d3-4075-8f7d-9bae8a8eee8c",
                 "resourcePath": "views\\c1df4765-9a5e-44dc-8232-fda4325fddfb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c34ad6ba-721e-43d4-a713-7b00c519ebb8",
+            "Value": {
+                "id": "6b64f3e8-d0dd-432f-974d-ba6a1b350526",
+                "resourcePath": "scripts\\spell_load_from_file\\spell_load_from_file.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1044,6 +1060,14 @@
                 "id": "3adf195e-6a1d-42f0-9573-fd2f9e566e26",
                 "resourcePath": "objects\\oPlayerTerra\\oPlayerTerra.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dbf4d188-fdce-47d8-8125-08902881a1de",
+            "Value": {
+                "id": "ff343b4f-e076-4d6f-a905-5e73899639d0",
+                "resourcePath": "scripts\\ds_list_to_array\\ds_list_to_array.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1228,13 +1252,16 @@
         "ce407979-e697-41aa-9ed4-02a7eeedf857",
         "577e5769-5c86-41f3-8889-c8b1ebc36926",
         "1d2bac2f-d434-403d-9bc6-6c89fa7a9082",
+        "a4c6ffe4-c343-43e6-a914-6bbb57856755",
         "b489332a-7958-462f-92b7-95f5359c391e",
+        "c34ad6ba-721e-43d4-a713-7b00c519ebb8",
         "7979a75b-cb0b-417a-b81f-3d5e3bc64d16",
         "67543bc9-07e0-453f-9f1c-3f0ede94432a",
         "4c36bc43-5601-450e-971f-23c0c77da72d",
         "8b0ad69d-ea8e-4faf-80dd-aea85b39d088",
         "f4060c9a-e88f-445c-bf5b-91b08669e2aa",
-        "76003cf2-7cb0-4a19-9385-baf85c2e8212"
+        "76003cf2-7cb0-4a19-9385-baf85c2e8212",
+        "dbf4d188-fdce-47d8-8125-08902881a1de"
     ],
     "tutorial": ""
 }

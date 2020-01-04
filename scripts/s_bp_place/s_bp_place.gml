@@ -10,14 +10,10 @@ if (argument_count >= 2) {state = argument[1];}
 var par = obj._bp_chosen_parent; // the parent to attach to
 if (argument_count >= 3) {par = argument[2];}
 
-//print (string(obj) + " " + string(state) + " " + string(par)); 
-
-if count > 10 {return}
-count ++ 
-
 // if given a new parent, set the parent
 if (par != noone) {
 	s_bp_add_child(par, obj);
+	s_bp_anchor_to_parent(obj);
 	obj._bp_chosen_parent = noone;
 
 // else if the object already has a parent, move to where it should be

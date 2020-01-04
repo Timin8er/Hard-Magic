@@ -2,24 +2,26 @@
 
 var obj = self;
 if (argument_count >= 1) {obj = argument[0];}
+var recursive = false;
+if (argument_count >= 2) {recursive = argument[1];}
 
 //for each vertex determine the absolute coords
 for (var i = 0; i < ds_list_size(obj.bp_surface_vertexs); i ++) {
 	
 	var vertex = ds_list_find_value(obj.bp_surface_vertexs, i);
 	
-	var beta = degtorad(-image_angle) + vertex[bpSurf.a]; // new angel from origin to vertex, beta = theta + alpha
+	var beta = degtorad(-obj.image_angle) + vertex[bpSurf.a]; // new angel from origin to vertex, beta = theta + alpha
 	
 	// new x position
-	vertex[bpSurf.x] = x + (vertex[bpSurf.r] * cos(beta));
+	vertex[bpSurf.x] = obj.x + (vertex[bpSurf.r] * cos(beta));
 	
 	// new y position
-	vertex[bpSurf.y] = y + (vertex[bpSurf.r] * sin(beta));
+	vertex[bpSurf.y] = obj.y + (vertex[bpSurf.r] * sin(beta));
 	
 	ds_list_replace(obj.bp_surface_vertexs, i, vertex);
 }
 
-// for eac vertex determine the m and b in y = mx + b
+// for each vertex determine the m and b in y = mx + b
 for (var i = 0; i < ds_list_size(obj.bp_surface_vertexs); i ++) {
 	
 	// get the next vector index
@@ -45,4 +47,12 @@ for (var i = 0; i < ds_list_size(obj.bp_surface_vertexs); i ++) {
 	vertex_i[bpSurf.v] = arctan2(dy, dx);
 	
 	ds_list_replace(obj.bp_surface_vertexs, i, vertex_i);
+}
+
+
+if (recursive) {
+	for (var i=0; i<ds_list_size(obj._bp_children); i++) {
+		var child =	ds_list_find_value(obj._bp_children, i);
+		s_bp_surface_calc_vectors(child, true);
+	}
 }

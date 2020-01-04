@@ -12,7 +12,6 @@ if (mouse_check_button_pressed(mb_left)) {
 			// is it the root part?
 			if (manip_bp_component.is_root) {
 				// place as solid
-				count = 0
 				s_bp_place(manip_bp_component);
 			}
 			// did it choose a parent?

@@ -1,8 +1,8 @@
 {
-    "id": "1d2bac2f-d434-403d-9bc6-6c89fa7a9082",
+    "id": "c34ad6ba-721e-43d4-a713-7b00c519ebb8",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "spell_component_get_save_map",
+    "name": "spell_load_from_file",
     "IsCompatibility": false,
     "IsDnD": false
 }

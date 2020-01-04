@@ -42,17 +42,16 @@ if (construction_state == bp_construction_state.manip_root or construction_state
 //}
 
 // draw surface snap
-//if (true){
-//	var l = ds_list_size(bp_surface_vertexs);
-//	for (var i=0; i < l; i++) {
-//		var j = i+1;
-//		if (j >= ds_list_size(bp_surface_vertexs)) {j=0;}
+
+var l = ds_list_size(bp_surface_vertexs);
+var j = l-1
+for (var i=0; i < l; i++) {
+	var vi = ds_list_find_value(bp_surface_vertexs, i)
+	var vj = ds_list_find_value(bp_surface_vertexs, j)
 		
-//		var vi = ds_list_find_value(bp_surface_vertexs, i)
-//		var vj = ds_list_find_value(bp_surface_vertexs, j)
-		
-//		draw_line_width_color(vi[bpSurf.x], vi[bpSurf.y], vj[bpSurf.x], vj[bpSurf.y], 2, c_orange, c_orange);
-//	}
-//}
+	draw_line_width_color(vi[bpSurf.x], vi[bpSurf.y], vj[bpSurf.x], vj[bpSurf.y], 2, c_orange, c_orange);
+	j = i;
+}
+
 
 

@@ -1,23 +1,26 @@
-/// @desc Saves a string out to a file.
-/// @arg fileneam
-var _filename = argument0
-var _components = ds_list_create()
+/// @desc Executable by the world controller to construct and save the spell structure as a json file
+/// @arg _filename
 
-with (o_component_const_mode) {
-	ds_list_add(_components, spell_component_get_save_map());
-	ds_list_mark_as_map(_components, ds_list_size(_components) - 1);
-}
+var _filename = argument[0]
 
+// thisis the map containing all spell data
+var _spell_map = ds_map_create();
 
-var _wrapper = ds_map_create();
-ds_map_add_list(_wrapper, "components", _components);
+// get the blueprint tree structure
+var _blueprint_structure = s_bp_get_tree_save_map(root_bp_component)
+ds_map_add_map(_spell_map, "blueprint_structure", _blueprint_structure);
 
+// spell name
+ds_map_add(_spell_map, "title", spell_title);
 
-var _string = json_encode(_wrapper);
+// spell cost
+ds_map_add(_spell_map, "cost", spell_cost);
+
+// encode and save
+var _string = json_encode(_spell_map);
 save_string_to_file(_filename, _string);
 
-
 // nuke the data:
-ds_map_destroy(_wrapper);
+ds_map_destroy(_spell_map);
 
-show_debug_message("gamer saved");
+print("game saved");

@@ -13,7 +13,7 @@ if (as_root) { // if this is the root
 	// set construction state
 	obj.construction_state = bp_construction_state.manip_root;
 	// detatch from parent
-	s_bp_set_parent(obj ,noone);
+	s_bp_set_parent(obj, noone);
 } else {
 	obj.construction_state = bp_construction_state.manip_branch;
 }
