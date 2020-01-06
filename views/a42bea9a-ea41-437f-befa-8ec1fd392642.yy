@@ -10,7 +10,7 @@
         "2d0ddb40-b463-4b9d-8e3b-4fe504623a97"
     ],
     "filterType": "GMSprite",
-    "folderName": "spellComponents",
+    "folderName": "Spell Components",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -7,7 +7,7 @@
         "acb4683f-a658-4b87-9077-8f5c35d76053"
     ],
     "filterType": "GMSprite",
-    "folderName": "charactors",
+    "folderName": "Charactors",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

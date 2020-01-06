@@ -10,7 +10,7 @@
         "7c6f13a4-fabf-404c-a2c3-b79ae629a47a"
     ],
     "filterType": "GMSprite",
-    "folderName": "environment",
+    "folderName": "Environment",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -1,5 +1,4 @@
-state = 0
-text_colors = [text_color_default, text_color_hover, text_color_down, text_color_disabled]
+enabled = true;
 
 parrent_offset_x = 0;
 parrent_offset_y = 0;

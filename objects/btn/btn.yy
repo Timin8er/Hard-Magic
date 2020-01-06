@@ -15,52 +15,22 @@
             "m_owner": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b"
         },
         {
-            "id": "bcce2076-b1bf-44a7-aa9b-33b1a18f6410",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 10,
-            "eventtype": 6,
-            "m_owner": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b"
-        },
-        {
-            "id": "d11844b9-1885-476c-b026-ff7a4f2034c5",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
-            "m_owner": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b"
-        },
-        {
-            "id": "fbfa91b6-c13c-4f45-aae2-e9c0f492f68d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 6,
-            "m_owner": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b"
-        },
-        {
-            "id": "8ba734f7-a46a-4167-ae50-2ab7a0fbdbca",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 11,
-            "eventtype": 6,
-            "m_owner": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b"
-        },
-        {
             "id": "3e3161e3-033e-4af8-a5c0-126dc4914f10",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b"
+        },
+        {
+            "id": "0d8bc33c-a716-4601-98a5-32c0d858bfb6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
             "eventtype": 8,
             "m_owner": "7781f1a3-9eb6-4806-9f1a-9a27d3bd3f7b"
         }
@@ -162,9 +132,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 256,
-            "value": "menu",
+            "value": "noone",
             "varName": "parent_menu",
             "varType": 5
+        },
+        {
+            "id": "af1bca9d-a5ec-4012-b715-1f03e7f8cee0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": true,
+            "rangeMax": 8,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "view_corner_anchor",
+            "varType": 1
         },
         {
             "id": "be5c7cda-b01a-4d34-9665-82b591c04c3c",
@@ -172,13 +156,13 @@
             "mvc": "1.0",
             "listItems": null,
             "multiselect": false,
-            "rangeEnabled": true,
+            "rangeEnabled": false,
             "rangeMax": 2,
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "view_reletive_corner_x",
-            "varType": 0
+            "varName": "view_anchor_corner_x",
+            "varType": 1
         },
         {
             "id": "eacb471f-2f05-49e2-98bf-3f1cb5124bdb",
@@ -186,13 +170,13 @@
             "mvc": "1.0",
             "listItems": null,
             "multiselect": false,
-            "rangeEnabled": true,
+            "rangeEnabled": false,
             "rangeMax": 2,
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "view_reletive_corner_y",
-            "varType": 0
+            "varName": "view_anchor_corner_y",
+            "varType": 1
         },
         {
             "id": "94d31f2a-378b-4546-a35f-4b95f62fb1e4",

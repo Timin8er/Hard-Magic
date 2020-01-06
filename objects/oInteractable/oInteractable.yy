@@ -65,6 +65,20 @@
             "value": "64",
             "varName": "interact_range",
             "varType": 1
+        },
+        {
+            "id": "551b70c8-7521-4e0e-b2d9-6cbee723e86b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 16,
+            "value": "noone",
+            "varName": "interact_script",
+            "varType": 5
         }
     ],
     "solid": false,
